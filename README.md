@@ -144,5 +144,3 @@ To systematically test multiple configurations (varying embedding models, chunk 
     python src/test_harness.py
 
 **Note:** Grid experiments may take a long time to complete. Results are logged in experiment_logs/ and full LLM responses are saved in llm_outputs/
-
-Aran Dharma, Ankit Adimala, Nubaha Ahsan, Sij Zhou
