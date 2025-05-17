@@ -1,11 +1,10 @@
-# DS4300 Practial 02: Local Retrieval-Augmented Generation System 
----
-
 ## Overview 
 
 This project implements a local Retrieval-Augmented Generation (RAG) system for querying course notes collected throughout the semester. The system ingests PDF documents, cleans and chunks the text, generated embeddings using multiple models, indexes these embeddings into vector databases (Redis with RediSearch, Chroma, and FAISS), and finally retrieves context for a user query to generate a response via a locally running LLM (using Ollama).
 
-The system is designed to be highly modular, supporting configurable chunking strategies, multiple embedding models, vector databases, and different loccal LLMs. The goal is to analyze the performance and output quality across various configurations. 
+The system is designed to be highly modular, supporting configurable chunking strategies, multiple embedding models, vector databases, and different loccal LLMs. The goal is to analyze the performance and output quality across various configurations.
+
+Project presentation:  https://docs.google.com/presentation/d/1qklDjhpvS9zZXORh65TL20POtPSfG0LUUUBLwvBYw2k/edit?usp=sharing
 
 ---
 
@@ -143,4 +142,4 @@ To systematically test multiple configurations (varying embedding models, chunk 
 
     python src/test_harness.py
 
-**Note:** Grid experiments may take a long time to complete. Results are logged in experiment_logs/ and full LLM responses are saved in llm_outputs/
+**Note:** Grid experiments may take a long time to complete when running locally. Results are logged in experiment_logs/ and full LLM responses are saved in llm_outputs/
