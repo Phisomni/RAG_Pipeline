@@ -11,7 +11,7 @@ Project presentation:  https://docs.google.com/presentation/d/1qklDjhpvS9zZXORh6
 ## Directory Structure
 
 ```
-DS4300SP25-Prac02/
+RAG_Pipeline/
 ├── data/                   # Raw course notes (PDFs)
 ├── embedding_results/      # JSON files with generated embeddings
 ├── experiment_logs/        # CSV logs from grid experiments
