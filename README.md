@@ -87,10 +87,10 @@ python src/load_dbs.py
 To make specifications about chunk size, chunk overlap, embedding model, and database used:
 
     python src/load_dbs.py \
-    --chunk_size [###] \
-    --overlap [##] \
-    --model ["all-MiniLM-L6-v2", "all-mpnet-base-v2", or "intfloat/e5-base-v2"] \
-    --vector_db ["faiss", "chroma", or "redis"]
+    --chunk_size <###> \
+    --overlap <##> \
+    --model <"all-MiniLM-L6-v2", "all-mpnet-base-v2", or "intfloat/e5-base-v2"> \
+    --vector_db <"faiss", "chroma", or "redis">
 
 
 Example:
@@ -123,9 +123,9 @@ python src/test_query.py
 To make specifications about the question, model and system prompt:
 
     python src/test_query.py \
-    --question "lorem ipsum" \
-    --llm_model "lorem ipsum" \
-    --system_prompt "lorem ipsum"
+    --question <"question text"> \
+    --llm_model <"model name from ollama models pulled"> \
+    --system_prompt <"prompt text">
 
 Example: 
 
